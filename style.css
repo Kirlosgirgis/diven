@@ -1,0 +1,422 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden !important;
+}
+body{
+    overflow-x: hidden !important;
+}
+
+
+.section-home{
+    height: 100vh;
+    background-image: linear-gradient(rgba(8, 8, 8, 0.68),rgba(8, 8, 8, 0.68)),url(imgs/bg.jpg);
+    background-size: cover;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(96, 93, 93, 0.557);
+    
+   
+}
+.hello{
+    font-size: 50px;
+    color: white;
+}
+.iconc{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 15px;
+}
+.img-about img{
+    width: 80%;
+}
+.progress{
+   height: 24px;
+   width: 90%;
+   
+
+}
+.progress-bar{
+    background-color: black;
+}
+.dc-button{
+    background-color: black;
+    color: white;
+}
+.dc-button:hover{
+    background-color: white;
+    color: black;
+}
+.section-ser{
+    background-color:#f7f7f7 ;   
+}
+.icon{
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0ecec;
+    border-radius: 50%;
+    transition: .5s;
+    padding: 5px;
+}
+
+.card:hover .icon{
+  background-color: black;
+  color: white;
+}
+.img-team img{
+    width: 100%;
+}
+.icon-team{
+    border: black solid 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    
+   
+}
+.icon-contact{
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 5px;
+    display: flex;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.icon-team:hover{
+
+    background-color: white;
+    color: black;
+}
+.overlay-team{
+    background-color: rgba(255, 255, 255, 0.913);
+}
+.content-team{
+    background-color: rgba(52, 52, 52, .8);
+    color: white;
+}
+.overlay-team{
+    opacity: 0;
+    transition: .6s;
+    margin: 5px;
+    
+  
+}
+.team:hover .overlay-team{
+    opacity: 1;
+    transform: rotatey(360deg);
+}
+.img-t img{
+    transition: .5s;
+}
+.img-team:hover .img-t img{
+    transform: scale(1.2);
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+}
+
+.box1:hover .icon-contact{
+    background-color: black;
+    color: white;
+}
+.icon-team{
+   
+    transition: .5s;
+    
+}
+.input{
+    background-color: #f4f4f4;
+    border: 0;
+    padding: 4px;
+}
+.input:focus{
+    outline: 0;
+}
+.work{
+    width: 85%;
+    margin: auto;
+}
+.icon-pro{
+    background-color: black;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.overlay-pro{
+    background-color: rgba(255, 255, 255, 0.922);
+    opacity: 0;
+    transition: .5s;
+    margin: 5px;
+
+}
+.overlay-pro:hover{
+    opacity: 1;
+}
+.icons-pro{
+    transition: .4s;
+    
+}
+.overlay-pro:hover .icons-pro{
+    transform: translatey(-100%);
+}
+.icon-pro:hover{
+    background-color: white;
+    color: black;
+}
+.img-slid img{
+    width: 100px;
+}
+.img-slid{
+    margin: 10px 10px 30px 10px;
+}
+.animation::after{
+    content: "";
+    animation-name:textanimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color: white;
+}
+@keyframes textanimation{
+    0%{content: "|";}
+    1%{content: "D|";}
+    2%{content: "DE|";}
+    3%{content: "DEV|";}
+    4%{content: "DEVE|";}
+    5%{content: "DEVEL|";}
+    6%{content: "DEVELO|";}
+    7%{content: "DEVELOP|";}
+    8%{content: "DEVELOPE|";}
+    9%{content: "DEVELOPER|";}
+    10%{content: "DEVELOPER|";}
+    11%{content: "DEVELOPE|";}
+    12%{content: "DEVELOP|";}
+    13%{content: "DEVELO|";}
+    14%{content: "DEVEL|";}
+    15%{content: "DEVE";}
+    16%{content: "DEV";}
+    17%{content: "DE";}
+    18%{content: "D";}
+    19%{content: "|";}
+    20%{content: "D|";}
+    21%{content: "DE|";}
+    22%{content: "DES|";}
+    23%{content: "DESI|";}
+    24%{content: "DESIG|";}
+    25%{content: "DESIGN|";}
+    26%{content: "DESIGNE|";}
+    27%{content: "DESIGNER|";}
+    28%{content: "DESIGNE|";}
+    29%{content: "DESIGN|";}
+    30%{content: "DESIG|";}
+    31%{content: "DESI|";}
+    32%{content: "DES|";}
+    33%{content: "DE|";}
+    34%{content: "D|";}
+    35%{content: "|";}
+    36%{content: "L|";}
+    37%{content: "La|";}
+    38%{content: "Lar|";}
+    40%{content: "Larr|";}
+    41%{content: "Larry|";}
+    42%{content: "Larry D|";}
+    43%{content: "Larry Da|";}
+    44%{content: "Larry Dan|";}
+    45%{content: "Larry Dani|";}
+    46%{content: "Larry Danie|";}
+    47%{content: "Larry Daniel|";}
+    48%{content: "Larry Daniel |";}
+    49%{content: "Larry Danie|";}
+    50%{content: "Larry Dani|";}
+    51%{content: "Larry Dan|";}
+    52%{content: "Larry Da";}
+    53%{content: "Larry D";}
+    54%{content: "Larry Da";}
+    55%{content: "Larry";}
+    56%{content: "Larr|";}
+    57%{content: "Lar|";}
+    58%{content: "La|";}
+    59%{content: "L|";}
+    60%{content: "|";}
+
+}
+.footer{
+    background-color: black;
+    color: #748182;
+    padding: 25px;
+}
+
+.link-pro{
+    color: black;
+    border: 0;
+    margin: 10px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.icon-social{
+    
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.carousel-item{
+    background-color: #f4f4f4;
+}
+.section-team .section-ser{
+    background-color: #f4f4f4;
+}
+.name-jerry{
+   color:#748182 ;
+   
+   font-weight: 700;
+ 
+}
+.i{
+    color: #748182;
+}
+.h-c{
+    font-size: 20px;
+}
+.b-t{
+    font-weight: 900;
+    font-size: 40px;
+   
+}
+.dan{
+    font-size: 18px;
+    font-weight: 800;
+}
+.img-about{
+   position: relative;
+   overflow: hidden;
+}
+.over-about{
+    width: 70%;
+    background-image: url(imgs/dots.png);
+    background-repeat: repeat;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    transform: translateY(100px);
+}
+.img-about img{
+    z-index: 2;
+}
+.over-t{
+    position: relative;
+   overflow: hidden;
+}
+.layer-t{
+    margin: auto;
+    width: 40%;
+    background-image: url(imgs/dots.png);
+    background-repeat: repeat;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    transform: translateY(10px);
+}
+.t{
+    position: relative;
+    z-index: 2;
+}
+.navbar-toggler {
+    color: white;
+    background-color: white;
+}
+.t-team{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav-item a {
+    position: relative;
+    letter-spacing: 0.5px;
+
+}
+.nav-item a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    transition: .4s;
+}
+.nav-item a:hover:after{
+    width: 90%;
+}
+.nav-item button{
+    position: relative;
+    letter-spacing: 0.5px;
+}
+.nav-item button::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0%;
+    height: 3px;
+    background-color:black;
+    transition: .4s;
+}
+.nav-item button:hover:after{
+    width: 90%;
+}
+
